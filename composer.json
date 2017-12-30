@@ -1,0 +1,24 @@
+{
+    "name": "nishimura/discordutil",
+    "description": "Discord Utilities",
+    "keywords": ["discord"],
+    "homepage": "https://github.com/nishimura/discordutil",
+    "license": "MIT",
+    "authors": [{
+        "name": "Satoshi Nishimura",
+        "email": "nishim314@gmail.com"
+    }],
+
+    "autoload": {
+        "psr-4": { "DiscordUtil\\": "src/" },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.0",
+        "react/event-loop": "0.4.*",
+        "ratchet/pawl": "0.3.*",
+        "psr/log": "1.*"
+    }
+}
