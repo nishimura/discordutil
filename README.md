@@ -72,7 +72,7 @@ $bot->on('MESSAGE_CREATE', function($data, $bot) use ($logger, $token) {
 
 if (function_exists('pcntl_async_signals')){
     $shutdown = function($signo, $siginfo) use ($bot) {
-        echo "\nclosing...$count\n";
+        echo "\nclosing...\n";
         $bot->close();
     };
     pcntl_signal(SIGTERM, $shutdown);
@@ -85,7 +85,7 @@ $bot->connect()->run();
 
 
 ```
-composer require nishimura/discordutil:0.0.1
+composer require "nishimura/discordutil:0.0.*"
 composer require monolog/monolog
 
 export PHP_DISCORD_BOT_TOKEN=' *** API KEY *** '
