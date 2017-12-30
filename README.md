@@ -85,7 +85,9 @@ $bot->connect()->run();
 
 
 ```
-composer install
+composer require nishimura/discordutil:0.0.1
+composer require monolog/monolog
+
 export PHP_DISCORD_BOT_TOKEN=' *** API KEY *** '
 php bot.php
 ```
