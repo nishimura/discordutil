@@ -15,7 +15,7 @@ error_reporting(-1);
 set_time_limit(0);
 
 if (php_sapi_name() !== 'cli') {
-    trigger_error('DiscordPHP will not run on a webserver. Please use PHP CLI to run a DiscordPHP bot.', E_USER_ERROR);
+    trigger_error('Please use PHP CLI.', E_USER_ERROR);
 }
 
 
